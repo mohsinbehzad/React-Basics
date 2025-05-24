@@ -1,0 +1,12 @@
+.box {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  margin: 3px;
+}
+
+.box p {
+  margin: 1px;
+}
