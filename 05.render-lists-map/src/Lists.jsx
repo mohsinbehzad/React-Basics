@@ -1,7 +1,7 @@
 function Lists(props) {
     const itemsList = props.item;
 
-    const listItems = itemsList.map((item) => <li key="item.id">{item.name}: {item.calories}</li>)
+    const listItems = itemsList.map((item) => <li key={item.id}>{item.name}: {item.calories}</li>)
 
     return (
         <>
