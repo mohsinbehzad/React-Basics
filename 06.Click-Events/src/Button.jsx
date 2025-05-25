@@ -1,6 +1,7 @@
 function Button() {
 
     // const handleClick = (()=> console.log("clicked"))
+
     let count = 0;
 
     const handleClick = (name) => {
@@ -12,8 +13,10 @@ function Button() {
             console.log(`${name} don't click me`);
         }
     }
+
+    const handleClick2 = (e) => e.target.textContent = "Danger";
     return (
-        <button className="btn" onClick={() => handleClick('Mohsin')}>Click me</button>
+        <button className="btn" onDoubleClick={(e) => handleClick2(e)} onClick={() => handleClick('Mohsin')}>Click me</button>
     );
 }
 
