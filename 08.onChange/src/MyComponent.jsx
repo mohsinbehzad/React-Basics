@@ -46,19 +46,20 @@ function MyComponent() {
                 <p>Player: </p>
 
                 <label >
-                    <input type="radio" value="job"
-                        checked={profession === "job"}
+                    <input type="radio" value="Job"
+                        checked={profession === "Job"}
                         onChange={handleProfessionChange}
                     />
                     Job
-                </label>
+                </label> <br />
                 <label >
-                    <input type="radio" value="business"
-                        checked={profession === "business"}
+                    <input type="radio" value="Business"
+                        checked={profession === "Business"}
                         onChange={handleProfessionChange}
                     />
                     Business
                 </label>
+                <p>Profession: {profession}</p>
             </div>
         </>
     )
